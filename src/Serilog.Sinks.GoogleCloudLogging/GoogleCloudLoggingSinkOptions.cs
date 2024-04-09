@@ -39,7 +39,7 @@ public class GoogleCloudLoggingSinkOptions
     public bool UseSourceContextAsLogName { get; set; }
 
     /// <summary>
-    /// Integrate logs with Cloud Trace by setting `Trace`, `SpanId`, `TraceSampled` properties on the LogEvent.
+    /// Integrate logs with Cloud Trace by setting `TraceId`, `SpanId`, `TraceSampled` properties on the LogEvent.
     /// Enabled by default. Required for Google Cloud Trace Log Correlation.
     /// See https://cloud.google.com/trace/docs/trace-log-integration
     /// </summary>

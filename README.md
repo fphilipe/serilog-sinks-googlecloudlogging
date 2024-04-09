@@ -80,7 +80,7 @@ This library uses the [Google Cloud .NET](https://cloud.google.com/dotnet/docs) 
 | ServiceName               | Name of the service added as metadata to log entries. Required for logged exceptions to be forwarded to StackDriver Error Reporting.                                                                                    |
 | ServiceVersion            | Version of the service added as metadata to log entries. Required for logged exceptions to be forwarded to StackDriver Error Reporting.                                                                                 |
 | UseSourceContextAsLogName | The log name for a log entry will be set to the [SourceContext](https://github.com/serilog/serilog/wiki/Writing-Log-Events#source-contexts) property if available. Default is `true`.                                   |
-| UseLogCorrelation         | Integrate logs with [Cloud Trace](https://cloud.google.com/trace) by setting `Trace`, `SpanId`, `TraceSampled` properties if available. Default is `true`.                                                              |
+| UseLogCorrelation         | Integrate logs with [Cloud Trace](https://cloud.google.com/trace) by setting `TraceId`, `SpanId`, `TraceSampled` properties if available. Default is `true`.                                                              |
 | GoogleCredentialJson      | JSON string to override [Application Default Credentials](https://cloud.google.com/docs/authentication/production#providing_credentials_to_your_application) (contents of your credential file).                        |
 
 ### Log Level Mapping
